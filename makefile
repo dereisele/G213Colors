@@ -3,6 +3,7 @@ install :
 	cp main.py /usr/bin/g213colors-gui
 	cp default.conf /etc/G213Colors.conf
 	cp g213colors.service /etc/systemd/system/g213colors.service
+	cp 99-g213colors.rules /etc/udev/rules.d/99-g213colors.rules
 	chmod +x /usr/bin/G213Colors.py
 	chmod +x /usr/bin/g213colors-gui
 	cp icons/G213Colors-16.png /usr/share/icons/hicolor/16x16/apps/g213colors.png
