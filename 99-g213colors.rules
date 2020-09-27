@@ -1,0 +1,1 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c336", ACTION=="add", RUN+="/bin/systemctl restart g213colors.service"
