@@ -1,0 +1,11 @@
+#!/sbin/openrc-run
+
+# https://github.com/goose121/initify systemd to openrc conversion perl script.
+#opernrc service unit for g213colors
+
+command=/usr/bin/g213colors-gui
+command_args="-t"
+pidfile=
+
+name="g213colors"
+description="Start G213Colors profile"

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=G213 Colors
-Exec=gksudo g213colors-gui
+Exec=pkexec g213colors-gui
 Comment=A gui to change the key colors on a Logitech G213 Prodigy Gaming Keyboard 
 Icon=g213colors
 Type=Application

@@ -26,6 +26,19 @@ The "Wave" color effect that is available with the Logitech software could not b
 ## Installation
 Clone this project with git and run `sudo make install`
 
+Remark: The PyUSB and PyGObject libraries can be installed with (Running Ubuntu) running the `fix.sh` file or by pasteing:
+
+```
+sudo apt install python3-gi python3-gi-cairo gir1.2-gtk-3.0
+pip install pycairo PyGObject
+sudo make install
+sudo python main.py
+```
+
+The desktop entry didn't work for me.
+In case your python is not found for sudo, check your python with `whereis python` using the normal user. For example I had to replace the last python command with 
+`sudo /home/user/miniconda3/bin/python main.py`
+
 ### Prerequisites
 * [Python](https://www.python.org/) 3.x (which is usually already installed)
 * [PyUSB](https://github.com/walac/pyusb) (please see their instructions on how to install)
