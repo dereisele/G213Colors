@@ -18,10 +18,11 @@ install :
 	cp be.jeroened.pkexec.g213colors.policy /usr/share/polkit-1/actions/
 	gtk-update-icon-cache -q /usr/share/icons/hicolor/
 	#### probe /sbin/openrc if exisits add boot/default  runner else.. 
-	if ! [ -x "$(command -v /sbin/openrc)" ]; then
- 	rc-update add g213colors default	
-  	elif 
-	 systemctl daemon-reload
+	@if [ -x "$(command -v /sbin/openrc)" ]; then\
+ 	    rc-update add g213colors default; \
+  	else \
+	    systemctl daemon-reload ; \
+    fi
 uninstall :
 	rm /usr/bin/G213Colors.py
 	rm /usr/bin/g213colors-gui
